@@ -22,7 +22,7 @@ def go():
 @app.route('/upload')#,methods=["POST"])  
 def chalodilli():
     subprocess.run("python3 ekaurrecognise.py & python3 sound.py", shell=True)
-    return render_template('index.html')
+    return render_template('thankyou.html')
 
 if __name__=='__main__':
     app.run(debug=True)
